@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  color: white;
+}
+.interface {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+}
+header {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  gap: 1rem;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  gap: 1rem;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+footer {
+  color: white;
+  font-size: 1.25rem;
+  border: 1px solid black;
+  background-color: gray;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 320px;
+  padding: 1rem;
+}
+.input {
+  margin-left: 2%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.camera {
+  color: black;
+  margin-top: 0.5rem;
+}
+.camera:hover {
+  color: #dc143c;
+}
+.mic {
+  color: black;
+  margin-top: 0.5rem;
+}
+.mic:hover {
+  color: #dc143c;
+}
+input {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem;
+  flex: 1;
+}
