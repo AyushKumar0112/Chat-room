@@ -5,7 +5,7 @@ body {
 .interface {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
+  height: 100vh;
   overflow: hidden;
 }
 header {
@@ -50,7 +50,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 320px;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 .input {
@@ -67,16 +67,52 @@ footer {
   color: #dc143c;
 }
 .mic {
+  display: flex;
+  gap: 1rem;
+}
+.mic_icon {
   color: black;
   margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
-.mic:hover {
+.mic_icon:hover {
   color: #dc143c;
 }
-input {
+.send {
+  color: black;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.send:hover {
+  color: #dc143c;
+}
+textarea {
   background-color: black;
   color: white;
   border-radius: 30px;
   padding: 0.5rem;
+  width: 150px;
+}
+.chat_message {
   flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.chat_bubble {
+  background-color: #dc143c;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: fit-content;
+  align-self: flex-end;
 }

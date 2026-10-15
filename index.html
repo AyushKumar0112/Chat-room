@@ -33,17 +33,24 @@
           <i class="fa-solid fa-camera"></i>
         </div>
       </header>
+      <div class="chat_message">
+        <!-- Chat bubbles will get injected here dynamically -->
+      </div>
       <footer>
         <div class="input">
           <div class="camera"><i class="fa-solid fa-camera"></i></div>
           <div classs="message">
-            <input type="text" placeholder="Message" />
+            <textarea placeholder="Message"></textarea>
           </div>
         </div>
         <div class="mic">
-          <i class="fa-solid fa-microphone"></i>
+          <button class="send"><i class="fa-solid fa-paper-plane"></i></button>
+          <div class="mic_icon">
+            <i class="fa-solid fa-microphone"></i>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
