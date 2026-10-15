@@ -49,8 +49,8 @@
           <nav class="avatar_name">Anime</nav>
         </div>
         <div class="contact">
-          <i class="fa-solid fa-phone"></i>
-          <i class="fa-solid fa-camera"></i>
+          <button class="history-btn" title="View Past Chats">History</button>
+          <button class="new-chat-btn">New</button>
         </div>
       </header>
       <div class="chat_message">
@@ -58,6 +58,13 @@
       </div>
       <footer>
         <div class="input">
+          <input
+            type="file"
+            class="camera-file-input"
+            accept="image/*"
+            capture="environment"
+            style="display: none"
+          />
           <div class="camera"><i class="fa-solid fa-camera"></i></div>
           <div classs="message">
             <textarea placeholder="Message"></textarea>

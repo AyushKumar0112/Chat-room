@@ -207,3 +207,21 @@ textarea {
   margin-bottom: 2px;
   display: block;
 }
+.new-chat-btn {
+  color: black;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+.new-chat-btn:hover {
+  background-color: gray;
+}
+.history-btn {
+  color: black;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+.history-btn:hover {
+  background-color: gray;
+}
