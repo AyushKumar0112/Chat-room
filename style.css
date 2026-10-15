@@ -165,16 +165,45 @@ textarea {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 10px;
 }
 .chat_bubble {
   background-color: #dc143c;
-  color: white;
+  color: black;
   padding: 0.5rem;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 0.5rem;
   border: 1px solid black;
   border-radius: 20px;
   width: fit-content;
   align-self: flex-end;
+}
+/* OUTGOING MESSAGES (Sent by me - right aligned) */
+.chat_bubble.outgoing {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  border-top-right-radius: 2px;
+}
+/* ICOMING MESSAGES (Received from others - Left Aligned)*/
+.chat_bubble.incoming {
+  background-color: #fff;
+  align-self: flex-start;
+  border-top-left-radius: 2px;
+}
+.message-meta {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: gray;
+}
+.sender-name {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #075e54;
+  margin-bottom: 2px;
+  display: block;
 }

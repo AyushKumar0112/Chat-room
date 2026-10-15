@@ -16,7 +16,22 @@ sendButton.addEventListener("click", function () {
     bubble.textContent = userText;
 
     // Give it a CSS class for styling (you can style this class in CSS layout)
-    bubble.classList.add("chat_bubble");
+    bubble.classList.add("chat_bubble", "outgoing");
+
+    // Format the current time
+    const now = new Date();
+    const timestring = now.toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+    //Structure the inner HTML of the bubble to include text, time, and ticks
+    bubble.innerHTML = `
+    <div class="message-text">${userText}</div>
+    <div class="message-meta">
+        <span class="timestamp">${timestring}</span>
+        <span class="ticks">👍</span>
+    </div>
+    `;
 
     // Append the bubble into your message display area
     messageArea.appendChild(bubble);
@@ -69,3 +84,29 @@ loginBtn.addEventListener("click", function () {
   loginScreen.style.display = "none";
   inputField.focus();
 });
+
+function displayIncomingMessage(senderName, messageText) {
+  const bubble = document.createElement("div");
+
+  //Add bith base class and 'incoming' class for left-alignment
+  bubble.classList.add("chat_bubble", "incoming");
+
+  const now = new Date();
+  const timestring = now.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  bubble.innerHTML = `
+    <span class="sender-name">${senderName}</span>
+    <div class="message-text">${messageText}</div>
+    <div class="message-meta">
+        <span class="timestamp">${timestring}</span>
+    </div>
+    `;
+
+  messageArea.appendChild(bubble);
+  messageArea.scrollTop = messageArea.scrollHeight;
+  inputField.value = "";
+  inputField.focus();
+}
