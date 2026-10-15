@@ -2,6 +2,68 @@ body {
   background-color: black;
   color: white;
 }
+.login_screen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: black;
+}
+.login {
+  border: 1px solid gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 270px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 5%;
+  margin: 80px auto;
+  background-color: burlywood;
+}
+.username {
+  color: white;
+  padding: 5px;
+  border-color: gray;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: black;
+}
+.avatar_img {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.avatar-file-input,
+.avatar-url-input {
+  color: white;
+  padding: 5px;
+  border-color: gray;
+  border-radius: 20px;
+  width: fit-content;
+  text-align: center;
+  background-color: black;
+}
+.join {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: black;
+  background-color: aqua;
+  text-align: center;
+}
+.join button:hover {
+  color: white;
+  background-color: black;
+}
+.heading {
+  color: black;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+}
 .interface {
   display: flex;
   flex-direction: column;
